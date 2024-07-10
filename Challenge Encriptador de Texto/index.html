@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Encriptador de Texto</h1>
+    <div class="input-container">
+      <textarea id="input-text" placeholder="Ingrese el texto aquí" maxlength="200"></textarea>
+      <div class="button-container">
+        <button id="encrypt-btn">Encriptar</button>
+        <button id="decrypt-btn">Desencriptar</button>        
+      </div>
+    </div>
+    <div class="output-section">
+        <textarea id="output-text" placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+        <div class="button-container">
+          <button id="copy-btn">Copiar</button>
+        </div>
+    </div>           
+    <div class="validation-message">
+      <p id="validation-text"></p>
+    </div>
+    <footer>
+      <p>Creado por <span id="author-name"></span> | &copy; <span id="creation-year">2024</span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
